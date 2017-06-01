@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { CoursenoteComponent } from './coursenote/coursenote.component';
+import { NavtabComponent } from './navtab/navtab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomepageComponent
+    HomepageComponent,
+    CarouselComponent,
+    CoursenoteComponent,
+    NavtabComponent
   ],
   imports: [
     BrowserModule,

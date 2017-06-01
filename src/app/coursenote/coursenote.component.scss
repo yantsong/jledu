@@ -1,0 +1,113 @@
+.coursenote {
+    color: #999;
+    .item :hover .time,
+    {
+        color: #d44920;
+    }
+    .item :hover .teacher,
+    {
+        color: #d44920;
+    }
+    .item :hover .linepoint {
+        span {
+            background: #d44920;
+        }
+    }
+    .item :hover .thumbnail img {
+        transform: scale(1.3) // max-width: 110%;
+    }
+    .item :hover .caption {
+        border-color: #d44920;
+    }
+    .imgbox img {
+        max-width: 100%;
+    }
+    .imgbox {
+        overflow: hidden;
+        font-size: 0;
+    }
+    img {
+        transition: 0.6s;
+    }
+    position: relative;
+    .carleft {
+        position: absolute;
+        top: 50%;
+        margin-top: -6rem;
+        left: -3.5rem;
+        height: 70px;
+        width: 40px;
+        background: url(http://wx.jledu.com.cn/static/inxweb/img/s-prev-btn.png) no-repeat
+    }
+    .carright {
+        position: absolute;
+        top: 50%;
+        margin-top: -6rem;
+        right: -3.5rem;
+        left: auto;
+        height: 70px;
+        width: 40px;
+        background: url(http://wx.jledu.com.cn/static/inxweb/img/s-next-btn.png) no-repeat
+    }
+    .caption {
+        border: 1px solid #ddd;
+        h1 {
+            font-size: 1.6rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 9rem;
+        }
+        span {
+            color: red;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 1.6rem;
+        }
+    }
+    .thumbnail {
+        border: none;
+        overflow: hidden;
+    }
+    .time {
+        font-size: 1.4rem;
+        text-align: center;
+        color: #666;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .teacher {
+        color: #666;
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 9rem;
+            font-size: 1.2rem;
+        }
+        em {
+            font-style: normal;
+        }
+    }
+    .linepoint {
+        height: 2px;
+        border-bottom: 1px solid #ccc;
+        margin-top: 1.5rem;
+        position: relative;
+        span {
+            position: absolute;
+            display: block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #fff;
+            border-width: 1px;
+            border-style: solid;
+            top: -5px;
+            left: 50%;
+            margin-left: -8px;
+            border-color: red;
+        }
+    }
+}

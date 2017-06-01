@@ -1,0 +1,57 @@
+<div>
+    <app-navtab title="直播课程" tips="换一换"></app-navtab>
+</div>
+<div class="carousel slide coursenote" data-ride="carousel" data-interval="10000" id="carouselnote">
+    <div class="carousel-inner">
+        <div class="item  active">
+            <div class="col-sm-6 col-md-3" *ngFor="let index of arr(4).fill(1)">
+                <div class="thumbnail">
+                    <div class="imgbox">
+                        <img src="http://wx.jledu.com.cn/images/upload/course/20160630/1467282090541.jpg" alt="">
+                    </div>
+                    <div class="caption">
+                        <div class="clearfix">
+                            <h1 class="pull-left">直播直播直播直播</h1>
+                            <span class="pull-right">正在直播</span>
+                        </div>
+                        <p>学员:xx人</p>
+                    </div>
+                    <div class="linepoint">
+                        <span></span>
+                    </div>
+                    <div class="time">12-21 13：00 --- 12-21 15：00</div>
+                    <div class="teacher clearfix">
+                        <span class="pull-left">主讲:李老师</span>
+                        <em class="pull-right">02-12--12-28</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="col-sm-6 col-md-3" *ngFor="let index of arr(4).fill(1)">
+                <div class="thumbnail">
+                    <div class="imgbox">
+                        <img src="http://wx.jledu.com.cn/images/upload/course/20160630/1467282090541.jpg" alt="">
+                    </div>
+                    <div class="caption">
+                        <div class="clearfix">
+                            <h1 class="pull-left">直播直播直播直播</h1>
+                            <span class="pull-right">正在直播</span>
+                        </div>
+                        <p>学员:xx人</p>
+                    </div>
+                    <div class="linepoint">
+                        <span></span>
+                    </div>
+                    <div class="time">12-21 13：00 --- 12-21 15：00</div>
+                    <div class="teacher clearfix">
+                        <span class="pull-left">主讲:李老师</span>
+                        <em class="pull-right">02-12--12-28</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#carouselnote" class="carright" data-slide="next"></a>
+    <a href="#carouselnote" class="carleft" data-slide="prev"></a>
+</div>
