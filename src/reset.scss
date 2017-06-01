@@ -38,6 +38,7 @@ input,
 select,
 textarea {
     font-family: "Microsoft Yahei", "微软雅黑", "SimSun", "宋体", "Verdana", "Arial";
+    font-weight: normal;
 }
 
 body,
@@ -152,8 +153,38 @@ a {
     cursor: pointer;
 }
 
+a:hover,
+a:focus {
+    color: #333;
+    text-decoration: none;
+}
+
 
 /*title*/
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
 
 
 /*float*/
