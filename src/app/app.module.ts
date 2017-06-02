@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import {Routes,RouterModule} from '@angular/router'
 
 import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
@@ -14,6 +15,11 @@ import { CourselistComponent } from './courselist/courselist.component';
 import { OnlinecourseComponent } from './onlinecourse/onlinecourse.component';
 import { RecommendComponent } from './recommend/recommend.component';
 
+const rootRouterConfig:Routes=[
+  {path:'',component:HomepageComponent},
+  {path:'homepage',component:HomepageComponent},
+  {path:'**',component:HomepageComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +36,8 @@ import { RecommendComponent } from './recommend/recommend.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(rootRouterConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

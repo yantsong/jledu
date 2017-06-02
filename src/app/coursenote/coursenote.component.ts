@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coursenote.component.scss']
 })
 export class CoursenoteComponent implements OnInit {
-arr=Array;
+private arr:Function=Array;
   constructor() { }
 
   ngOnInit() {
