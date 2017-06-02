@@ -1,1 +1,38 @@
-.onlinecourse {}
+.onlinecourse {
+    ul {
+        margin-top: -4.19rem;
+        margin-left: 11.5rem;
+        .active {
+            border-color: #d44920;
+        }
+        li {
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            padding: 1rem 1.5rem;
+            margin: 0 0.5rem;
+            border-width: 2px 1px 0 1px;
+            border-style: solid;
+            border-color: transparent;
+            color: #666;
+            &:hover {
+                border-color: #d44920;
+            }
+        }
+    }
+    @media screen and(min-width: 975px) {
+        ul {
+            margin-top: -3.9rem;
+            li {
+                padding: 0.9rem 1.5rem;
+            }
+        }
+    }
+    @media screen and(max-width: 765px) {
+        ul {
+            margin-top: -4.5em;
+            li {
+                padding: 0.9rem 1.5rem;
+            }
+        }
+    }
+}
