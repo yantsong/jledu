@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
 import { FootComponent } from './foot/foot.component';
 import { CourslistComponent } from './courslist/courslist.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
     FootComponent,
-    CourslistComponent
+    CourslistComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
