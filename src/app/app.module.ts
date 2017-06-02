@@ -15,11 +15,15 @@ import { CourselistComponent } from './courselist/courselist.component';
 import { OnlinecourseComponent } from './onlinecourse/onlinecourse.component';
 import { RecommendComponent } from './recommend/recommend.component';
 
+import { CourslistComponent } from './courslist/courslist.component';
+import { LoginComponent } from './login/login.component';
+
 const rootRouterConfig:Routes=[
   {path:'',component:HomepageComponent},
   {path:'homepage',component:HomepageComponent},
   {path:'**',component:HomepageComponent}
 ];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,9 @@ const rootRouterConfig:Routes=[
     NavtabComponent,
     CourselistComponent,
     OnlinecourseComponent,
-    RecommendComponent
+    RecommendComponent,
+    CourslistComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
