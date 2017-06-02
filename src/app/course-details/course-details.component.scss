@@ -184,7 +184,6 @@
     .down-right {
         border: 1px solid #f0f0f0;
         padding: 0 15px;
-        height: 300px;
     }
     .down-left {
         width: calc(70% - 10px);
@@ -204,6 +203,9 @@
                     border-top: 3px solid #CF3F3F;
                 }
             }
+        }
+        .down-content {
+            padding: 20px 10px;
         }
     }
     .down-right {
