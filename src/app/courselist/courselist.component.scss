@@ -1,8 +1,6 @@
 .courselist {
     .thumbnail {
         border: none;
-        overflow: hidden;
-        padding: 0;
     }
     .listitem:hover .thumbnail {
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -28,6 +26,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             width: 100%;
+            font-family: "Helvetica Neue", \5FAE\8F6F\96C5\9ED1, "SimHei", Tohoma;
         }
     }
     em {
@@ -41,8 +40,9 @@
         margin: 2rem 0 0.5rem 0;
         span {
             color: #999;
+            width: 30%;
             &:nth-of-type(1) {
-                margin-right: 1rem;
+                margin-right: 0.8rem;
             }
         }
     }

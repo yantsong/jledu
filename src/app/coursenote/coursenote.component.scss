@@ -44,10 +44,21 @@
         top: 50%;
         margin-top: -6rem;
         right: -3.5rem;
-        left: auto;
         height: 70px;
         width: 40px;
         background: url(http://wx.jledu.com.cn/static/inxweb/img/s-next-btn.png) no-repeat
+    }
+    @media(max-width:500px) {
+        .carleft {
+            display: none;
+            // left: 0;
+            // margin-top: -3.5rem;
+        }
+        .carright {
+            display: none;
+            // right: 0;
+            // margin-top: -3.5rem;
+        }
     }
     .caption {
         border: 1px solid #ddd;
@@ -56,7 +67,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            width: 9rem;
+            width: 50%;
         }
         span {
             color: red;
@@ -83,7 +94,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            width: 9rem;
+            width: 43%;
             font-size: 1.2rem;
         }
         em {
@@ -108,6 +119,11 @@
             left: 50%;
             margin-left: -8px;
             border-color: red;
+        }
+    }
+    @media(max-width:500px) {
+        .item>div {
+            padding: 0 5px;
         }
     }
 }

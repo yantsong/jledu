@@ -1,119 +1,114 @@
 <header id="head">
     <div class="container">
         <div class="row">
-             <div class="col-md-2">
+            <div class="col-md-2">
                 <h1 class="logo">
-                    <a href="javascript:;"><img src="/assets/images/1492383281510.png"  alt="吉教云校Logo"></a>
+                    <a href="javascript:;"><img src="/assets/images/1492383281510.png" alt="吉教云校Logo"></a>
                 </h1>
             </div>
             <div class="head-Right clearfix">
-              <div class="col-md-5">
-                  <ul class="head-nav">
-                      <li>
-                        <a href="javascript:;">首页</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">课程</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">直播</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">名师</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="col-md-5">
-                <div class="row">
-                <div class="head-Rall">
-                <div class="head-serch">
-                    <form>
-                        <label class="serch-box">
+                <div class="col-md-5">
+                    <ul class="head-nav">
+                        <li>
+                            <a [routerLink]="['/homepage']">首页</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/coursepage']">课程</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="head-Rall">
+                            <div class="head-serch">
+                                <form>
+                                    <label class="serch-box">
                           <input type="text" value  placeholder="搜索...">
                           <button class="head-btn" type="submit">
                             <em class="head-icon"></em>
                           </button>
                         </label>
-                    </form>
+                                </form>
+                            </div>
+                            <ul class="head-login">
+                                <li>
+                                    <a href="javascript:;">
+                                        <em class="login-icon"></em>
+                                        <span class="txt-login">登录</span>
+                                    </a>
+                                </li>
+                                <li class="login-one" style="display:none">
+                                    <a href="javascript:;">
+                                        <em class="email-icon"></em>
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="javascript:;">
+                                        <img src="/assets/images/avatar-boy.gif" width="30" height="30" alt="">
+                                        <span id="userName">test01@jledu.com</span>
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="javascript:;">
+                                        <span>帮助</span>
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="javascript:;">
+                                        <span>退出</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <ul class="head-login">
-                    <li>
-                      <a href="javascript:;">
-                        <em class="login-icon"></em>
-                        <span class="txt-login">登录</span>
-                      </a>
-                    </li>
-                    <li class="login-one" style="display:none">
-                        <a href="javascript:;">
-                          <em class="email-icon"></em>
-                        </a>
-                    </li>
-                    <li  style="display:none">
-                        <a href="javascript:;">
-                          <img src="/assets/images/avatar-boy.gif"  width="30" height="30" alt="">
-                          <span id="userName">test01@jledu.com</span>
-                        </a>
-                    </li>
-                    <li  style="display:none">
-                        <a href="javascript:;">
-                          <span>帮助</span>
-                        </a>
-                    </li>
-                    <li  style="display:none">
-                        <a href="javascript:;">
-                          <span>退出</span>
-                        </a>
-                    </li>
-                </ul>
-                </div>
-                </div>
-              </div>
             </div>
             <aside class="min-nav-btn pack">
-			        <div class="min-nav-icon"></div>
-		        </aside>
+                <div class="min-nav-icon"></div>
+            </aside>
         </div>
     </div>
 </header>
 <div class="head-moblie-mask"></div>
 <div class="head-mobile">
-  <div class="head-mobile-box">
-      <section class="cleafix">
-        <div class="pic-icon">
-          <img src="/assets/images/avatar-boy.gif" width="60" height="60" alt="">
-        </div>
-        <h4>
-          <span>test01@jledu.com</span>
-        </h4>
-        <div class="shop-car">
-          <a href="javascript:;">
+    <div class="head-mobile-box">
+        <section class="cleafix">
+            <div class="pic-icon">
+                <img src="/assets/images/avatar-boy.gif" width="60" height="60" alt="">
+            </div>
+            <h4>
+                <span>test01@jledu.com</span>
+            </h4>
+            <div class="shop-car">
+                <a href="javascript:;">
             购物车
           </a>
-        </div>
-      </section>
-      <nav class="mn-nav ">
-          <ul class="clearfix">
-            <li><a href="javascript:;">首页</a></li>
-            <li><a href="javascript:;">课程</a></li>
-            <li><a href="javascript:;">直播</a></li>
-            <li><a href="javascript:;">名师</a></li>
-          </ul>
-      </nav>
-      <section class="person-msg">
-          <ul>
-            <li><a href="javascript:;">我的课程</a></li>
-            <li><a href="javascript:;">我的笔记</a></li>
-            <li><a href="javascript:;">课程收藏</a></li>
-            <li><a href="javascript:;">订单中心</a></li>
-            <li><a href="javascript:;">我的提问</a></li>
-            <li><a href="javascript:;">我的回答</a></li>
-            <li><a href="javascript:;">个人资料</a></li>
-            <li><a href="javascript:;">密码设置</a></li>
-            <li><a href="javascript:;">消息中心</a></li>
-          </ul>
-          <div class="exit">
-            <a href="javascript:;" class="login-out">退出登录</a>
-          </div>
-      </section>
-  </div>
+            </div>
+        </section>
+        <nav class="mn-nav ">
+            <ul class="clearfix">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">课程</a></li>
+                <li><a href="javascript:;">直播</a></li>
+                <li><a href="javascript:;">名师</a></li>
+            </ul>
+        </nav>
+        <section class="person-msg">
+            <ul>
+                <li><a href="javascript:;">我的课程</a></li>
+                <li><a href="javascript:;">我的笔记</a></li>
+                <li><a href="javascript:;">课程收藏</a></li>
+                <li><a href="javascript:;">订单中心</a></li>
+                <li><a href="javascript:;">我的提问</a></li>
+                <li><a href="javascript:;">我的回答</a></li>
+                <li><a href="javascript:;">个人资料</a></li>
+                <li><a href="javascript:;">密码设置</a></li>
+                <li><a href="javascript:;">消息中心</a></li>
+            </ul>
+            <div class="exit">
+                <a href="javascript:;" class="login-out">退出登录</a>
+            </div>
+        </section>
+    </div>
 </div>

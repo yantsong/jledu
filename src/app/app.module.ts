@@ -17,10 +17,12 @@ import { RecommendComponent } from './recommend/recommend.component';
 
 import { CourslistComponent } from './courslist/courslist.component';
 import { LoginComponent } from './login/login.component';
+import { CoursepageComponent } from './coursepage/coursepage.component';
 
 const rootRouterConfig:Routes=[
   {path:'',component:HomepageComponent},
   {path:'homepage',component:HomepageComponent},
+  {path:'coursepage',component:CoursepageComponent},
   {path:'**',component:HomepageComponent}
 ];
 
@@ -37,7 +39,8 @@ const rootRouterConfig:Routes=[
     OnlinecourseComponent,
     RecommendComponent,
     CourslistComponent,
-    LoginComponent
+    LoginComponent,
+    CoursepageComponent
   ],
   imports: [
     BrowserModule,

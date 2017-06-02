@@ -5,12 +5,27 @@ h1 {
     padding: 0;
 }
 
+.col-xs-6 {
+    padding: 0;
+}
+
+.thumbnail .caption {
+    padding: 5px;
+}
+
 $min-font-size:1.4rem;
 $max-font-size: 1.8rem;
 $min-screen: 600px;
 $max-screen: 1200px;
 :root {
     font-size: 10px;
+    font-family: "Helvetica Neue", \5FAE\8F6F\96C5\9ED1, "SimHei", Tohoma;
+}
+
+@media(max-width:500) {
+     :root {
+        font-size: 8px;
+    }
 }
 
 article {
