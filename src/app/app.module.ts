@@ -8,6 +8,7 @@ import { CourseDetailsComponent } from './course-details/course-details.componen
 import { NewsComponent } from './news/news.component';
 import { CourseSynopsisComponent } from './course-synopsis/course-synopsis.component';
 import { CourseSyllabusComponent } from './course-syllabus/course-syllabus.component';
+import { CourseCommentComponent } from './course-comment/course-comment.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CourseSyllabusComponent } from './course-syllabus/course-syllabus.compo
     CourseDetailsComponent,
     NewsComponent,
     CourseSynopsisComponent,
-    CourseSyllabusComponent
+    CourseSyllabusComponent,
+    CourseCommentComponent
   ],
   imports: [
     BrowserModule,
