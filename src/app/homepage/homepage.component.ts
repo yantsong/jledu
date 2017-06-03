@@ -1,3 +1,4 @@
+import { JlcourseService, Course } from './../shared/jlcourse.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
+ private morkCourse:Array<Course>;
 
-  constructor() { }
+  constructor(private jlcourse: JlcourseService) { }
 
   ngOnInit() {
+    this.morkCourse = this.jlcourse.getAllCourse();
+    console.log(this.morkCourse);
+    
   }
 
 }

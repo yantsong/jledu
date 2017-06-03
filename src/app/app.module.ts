@@ -1,3 +1,4 @@
+import { JlcourseService } from './shared/jlcourse.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -48,7 +49,7 @@ const rootRouterConfig:Routes=[
     HttpModule,
     RouterModule.forRoot(rootRouterConfig)
   ],
-  providers: [],
+  providers: [JlcourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
