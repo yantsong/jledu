@@ -4,17 +4,17 @@
 <div class="carousel slide coursenote" data-ride="carousel" data-interval="10000" id="carouselnote">
     <div class="carousel-inner">
         <div class="item  active">
-            <div class="col-sm-6 col-md-3 col-xs-6" *ngFor="let index of arr(4).fill(1)">
+            <div class="col-sm-6 col-md-3 col-xs-6" *ngFor="let item of dataOne">
                 <div class="thumbnail">
                     <div class="imgbox">
-                        <img src="http://wx.jledu.com.cn/images/upload/course/20160630/1467282090541.jpg" alt="">
+                        <img [src]="item.src" alt="">
                     </div>
                     <div class="caption">
                         <div class="clearfix">
-                            <h1>直播直播直播直播</h1>
+                            <h1>{{item.coursename}}</h1>
                             <span>正在直播</span>
                         </div>
-                        <p>学员:xx人</p>
+                        <p>学员:{{item.watch}}人</p>
                     </div>
                     <div class="linepoint">
                         <span></span>
@@ -28,18 +28,18 @@
             </div>
         </div>
         <div class="item">
-            <div class="col-sm-6 col-md-3 col-xs-6" *ngFor="let index of arr(4).fill(1)">
+            <div class="col-sm-6 col-md-3 col-xs-6" *ngFor="let item of dataTwo">
                 <div class="thumbnail">
                     <div class="imgbox">
-                        <img src="http://wx.jledu.com.cn/images/upload/course/20160630/1467282090541.jpg" alt="">
+                        <img [src]="item.src" alt="">
                     </div>
                     <div class="caption">
                         <div>
-                            <h1>直播直播直播直播</h1>
+                            <h1>{{item.coursename}}</h1>
                             <span>正在直播</span>
 
                         </div>
-                        <p>学员:xx人</p>
+                        <p>学员:{{item.watch}}人</p>
                     </div>
                     <div class="linepoint">
                         <span></span>
