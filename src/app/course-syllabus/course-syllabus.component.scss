@@ -1,0 +1,77 @@
+.icon16 {
+    display: inline-block;
+    background: url('../../assets/images/course-derails/icon.png') no-repeat right center;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.title {
+    padding-bottom: 20px;
+    h4 {
+        border-left: 4px solid #CF3F3F;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+}
+
+.content {
+    font-size: 14px;
+    color: #888;
+    line-height: 30px;
+    .list {
+        margin-bottom: 10px;
+        .headline {
+            width: 100%;
+            display: inline-block;
+            background-color: #f4f4f4;
+            border: 1px solid #f4f4f4;
+            border-radius: 10px;
+            padding: 2px 15px;
+            p {
+                vertical-align: middle;
+                display: inline-block;
+                width: calc(100% - 21px);
+            }
+            span {
+                background-position: 0 -212px;
+                // background-position: 0 -195px;
+            }
+        }
+        .section {
+            overflow: hidden;
+            li {
+                padding: 10px 5px 10px 15px;
+                border-bottom: 1px solid #f0f0f0;
+                &:hover {
+                    background-color: #f2f7fa;
+                    a {
+                        color: #fff;
+                        background-color: #CF3F3F;
+                    }
+                    span {
+                        background-position: -494px -202px;
+                        ;
+                    }
+                }
+                span {
+                    background-position: -461px -202px;
+                }
+                p {
+                    width: calc(100% - 93px);
+                    display: inline- block;
+                    vertical-align: middle;
+                }
+                a {
+                    display: inline-block;
+                    vertical-align: middle;
+                    border: 1px solid #d44920;
+                    border-radius: 6px;
+                    font-size: 12px;
+                    padding: 0 5px;
+                    color: #d44920;
+                }
+            }
+        }
+    }
+}

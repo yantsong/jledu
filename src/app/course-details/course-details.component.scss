@@ -1,0 +1,251 @@
+.icon18 {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+}
+
+.route {
+    width: 100%;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    li {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 30px;
+        color: #999;
+        a {
+            color: #999;
+        }
+        &:last-child {
+            color: #333;
+        }
+    }
+}
+
+.course-play {
+    border: 1px solid #f0f0f0;
+    background-color: #fff;
+    padding: 20px 5px;
+    margin-bottom: 20px;
+    .up-left {
+        a {
+            width: 100%;
+            display: inline-block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .up-right {
+        color: #999;
+        font-size: 14px;
+        h2 {
+            font-weight: normal;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .people {
+            width: 100%;
+            padding-bottom: 25px;
+            margin-bottom: 15px;
+            color: #666;
+            border-bottom: 1px solid #f4f4f4;
+            li {
+                display: inline-block;
+                margin-right: 30px;
+                background: url('../../assets/images/course-derails/icon.png') no-repeat center left;
+                padding-left: 20px;
+                font-size: 14px;
+                line-height: 16px;
+                em {
+                    color: #333;
+                }
+            }
+            .study {
+                background-position: -544px -145px;
+            }
+            .hours {
+                background-position: -543px -176px;
+            }
+            .browse-count {
+                background-position: -542px -208px;
+            }
+        }
+        .lecturer {
+            margin-bottom: 30px;
+            p {
+                display: inline-block;
+            }
+            ul {
+                display: inline-block;
+                li {
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .share-box {
+            margin-bottom: 30px;
+        }
+        .share,
+        .collection {
+            line-height: 18px;
+            display: inline-block;
+            padding-right: 15px;
+            p {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .collection {
+            em {
+                background-image: url('../../assets/images/course-derails/icon.png');
+                background-position: 0 -112px;
+            }
+            &:hover em {
+                background-position: 0 -136px;
+            }
+            &:hover p {
+                color: #CF3F3F;
+            }
+        }
+        .share {
+            cursor: pointer;
+            &:hover ul {
+                width: 150px;
+            }
+            em {
+                background-image: url('../../assets/images/course-derails/icon.png');
+                background-position: -3px -88px;
+            }
+            ul {
+                display: inline-block;
+                height: 16px;
+                vertical-align: middle;
+                width: 0px;
+                overflow: hidden;
+                transition: width 0.3s ease-out;
+                li {
+                    display: inline-block;
+                    margin-left: 4px;
+                    a {
+                        background-image: url('../../assets/images/course-derails/icons_0_16.png');
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        padding-top: 2px;
+                        &:hover {
+                            opacity: .7;
+                        }
+                    }
+                }
+                .weibo {
+                    background-position: 0 -104px;
+                }
+                .weixin {
+                    background-position: 0 -1612;
+                }
+                .qzone {
+                    background-position: 0 -52px;
+                }
+                .douban {
+                    background-position: 0 -468px;
+                }
+                .renren {
+                    background-position: 0 -208px;
+                }
+                .tqq {
+                    background-position: 0 -260px;
+                }
+            }
+        }
+        .watch {
+            line-height: 36px;
+            text-decoration: none;
+            display: inline-block;
+            a {
+                border: 1px solid #d44920;
+                border-radius: 5px;
+                display: inline-block;
+                font-size: 18px;
+                padding: 0 20px;
+                &:hover {
+                    background: #CF3F3F;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.course-content {
+    .down-left,
+    .down-right {
+        border: 1px solid #f0f0f0;
+        padding: 0 15px;
+    }
+    .down-left {
+        width: calc(70% - 10px);
+        .list {
+            width: 100%;
+            border-bottom: 1px solid #f0f0f0;
+            li {
+                display: inline-block;
+                padding: 0 20px;
+                line-height: 52px;
+                font-size: 16px;
+                margin: 0 2px;
+                border-top: 3px solid #FFF;
+                cursor: pointer;
+                &:hover {
+                    color: #CF3F3F;
+                    border-top: 3px solid #CF3F3F;
+                }
+            }
+        }
+        .down-content {
+            padding: 20px 10px;
+            min-height: 600px;
+        }
+    }
+    .down-right {
+        width: calc(30% - 10px);
+        .title {
+            padding: 20px 0 18px;
+            border-bottom: 1px solid #f0f0f0;
+            h4 {
+                border-left: 4px solid #CF3F3F;
+                font-size: 16px;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .course-play {
+        .up-left {
+            margin-bottom: 15px;
+        }
+    }
+    .course-content {
+        .down-left,
+        .down-right {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .course-content {
+        .down-left {
+            .list {
+                li {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}

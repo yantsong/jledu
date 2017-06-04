@@ -1,8 +1,11 @@
+
 import { JlcourseService } from './shared/jlcourse.service';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
 import {Routes,RouterModule} from '@angular/router'
 
 import { AppComponent } from './app.component';
@@ -29,6 +32,12 @@ const rootRouterConfig:Routes=[
   {path:'**',component:HomepageComponent}
 ];
 
+import { CourseDetailsComponent } from './course-details/course-details.component';
+import { NewsComponent } from './news/news.component';
+import { CourseSynopsisComponent } from './course-synopsis/course-synopsis.component';
+import { CourseSyllabusComponent } from './course-syllabus/course-syllabus.component';
+import { CourseCommentComponent } from './course-comment/course-comment.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +55,11 @@ const rootRouterConfig:Routes=[
     CoursepageComponent,
     ClassifyPipe,
     ChangePipe
+    CourseDetailsComponent,
+    NewsComponent,
+    CourseSynopsisComponent,
+    CourseSyllabusComponent,
+    CourseCommentComponent
   ],
   imports: [
     BrowserModule,
