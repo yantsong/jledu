@@ -54,7 +54,7 @@ import { CourseCommentComponent } from './course-comment/course-comment.componen
     LoginComponent,
     CoursepageComponent,
     ClassifyPipe,
-    ChangePipe
+    ChangePipe,
     CourseDetailsComponent,
     NewsComponent,
     CourseSynopsisComponent,
