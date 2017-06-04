@@ -13,5 +13,10 @@ export class OnlinecourseComponent implements OnInit {
   constructor() { }
   ngOnInit() {
   }
+  checkNewCourse(){
+    console.log(111);
+    
+    this.key = "fresh";
+  }
 
 }

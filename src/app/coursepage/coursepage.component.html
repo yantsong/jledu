@@ -10,7 +10,7 @@
                     <li><a href="javascript:;">价格</a></li>
                 </ol>
             </section>
-            <app-courselist [courseData]="courseData"></app-courselist>
+            <app-courselist [courseData]="courseData | slice :0 :12"></app-courselist>
         </div>
     </div>
 </div>

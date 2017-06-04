@@ -4,10 +4,10 @@
     </div>
     <ul class="clearfix">
         <li class="pull-left active">精品课程</li>
-        <li class="pull-left">最新课程</li>
+        <li class="pull-left" (click)="checkNewCourse()">最新课程</li>
         <li class="pull-left">全部课程</li>
     </ul>
     <div>
-        <app-courselist [courseData]="courseData  | classify : kind : key" [index]="0"></app-courselist>
+        <app-courselist [courseData]="courseData  | classify : kind : key | slice :0 :8"></app-courselist>
     </div>
 </div>

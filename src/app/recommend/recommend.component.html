@@ -2,5 +2,5 @@
     <app-navtab title="为你推荐" tips="换一换"></app-navtab>
 </div>
 <div>
-    <app-courselist [courseData]="courseData  | classify : kind : key" [index]="index"></app-courselist>
+    <app-courselist [courseData]="courseData  | classify : kind : key | slice :index :(index+1)*4"></app-courselist>
 </div>
