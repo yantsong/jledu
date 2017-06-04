@@ -25,18 +25,21 @@ import { CoursepageComponent } from './coursepage/coursepage.component';
 import { ClassifyPipe } from './pipe/classify.pipe';
 import { ChangePipe } from './pipe/change.pipe';
 
-const rootRouterConfig:Routes=[
-  {path:'',component:HomepageComponent},
-  {path:'homepage',component:HomepageComponent},
-  {path:'coursepage',component:CoursepageComponent},
-  {path:'**',component:HomepageComponent}
-];
-
 import { CourseDetailsComponent } from './course-details/course-details.component';
 import { NewsComponent } from './news/news.component';
 import { CourseSynopsisComponent } from './course-synopsis/course-synopsis.component';
 import { CourseSyllabusComponent } from './course-syllabus/course-syllabus.component';
 import { CourseCommentComponent } from './course-comment/course-comment.component';
+
+const rootRouterConfig:Routes=[
+  {path:'',component:HomepageComponent},
+  {path:'homepage',component:HomepageComponent},
+  {path:'coursepage',component:CoursepageComponent},
+  // {path:'course-details',component:CourseDetailsComponent},
+  {path:'course-details/:id',component: CourseDetailsComponent},
+  {path:'**',component:HomepageComponent}
+];
+
 
 @NgModule({
   declarations: [

@@ -1,6 +1,6 @@
 <div class="courselist clearfix">
     <div class="col-sm-6 col-md-3 col-xs-6 listitem" *ngFor="let item of courseData">
-        <div class=" thumbnail ">
+        <div class=" thumbnail" [routerLink]="['/course-details',item.courseid] ">
             <div class="imgbox ">
                 <img [src]="item.src " alt=" ">
             </div>

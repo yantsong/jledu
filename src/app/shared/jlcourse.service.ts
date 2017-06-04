@@ -18,6 +18,10 @@ export class JlcourseService {
   getAllCourse():any {
     return this.morkCourse;
   }
+  getCourseById(id:number):any{
+    return this.morkCourse.find(
+      (x) =>{ return x.courseid == id} )
+  }
 
 }
 export class Course {
