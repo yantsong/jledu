@@ -6,12 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./courselist.component.scss']
 })
 export class CourselistComponent implements OnInit {
-private arr:Function=Array;
 @Input()
-num:number=4;
+courseData:Array<any>;
+private currentData:Array<any>;
+@Input()
+index:number;
   constructor() { }
-
   ngOnInit() {
   }
-
 }

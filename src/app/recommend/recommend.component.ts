@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-recommend',
@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recommend.component.scss']
 })
 export class RecommendComponent implements OnInit {
-
+@Input()
+courseData:Array<any>;
+private kind:string = "capital"
+private key:string = "support"
+private index:number = 0;
   constructor() { }
-
   ngOnInit() {
   }
 

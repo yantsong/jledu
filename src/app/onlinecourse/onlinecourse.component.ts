@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-onlinecourse',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./onlinecourse.component.scss']
 })
 export class OnlinecourseComponent implements OnInit {
-
+ private key:string = 'hot';
+ private kind:string = 'coursestatus'
+  @Input()
+  courseData:Array<any>;
   constructor() { }
-
   ngOnInit() {
   }
 

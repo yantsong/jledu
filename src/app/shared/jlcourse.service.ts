@@ -25,7 +25,7 @@ export class Course {
               public src:string,
               public sell:number,
               public watch:number,
-              public time:number,
+              public times:number,
               public coursestatus:string,
               public domian:string,
               public capital:string,
