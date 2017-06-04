@@ -6,17 +6,9 @@
         padding: 30px 0;
         overflow: hidden;
     }
-    
+
     .link {
-        width: 80%;
-        float: left;
-        h4 {
-            font-family: 'Microsoft YaHei';
-            font-size: 18px;
-            color: #fff;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #393939;
-        }
+          text-align: center;
         p {
             margin-top: 20px;
             span {
@@ -24,32 +16,13 @@
                 margin: 0 10px 5px;
                 display: inline-block;
                 vertical-align: middle;
-                a:hover {
-                    color: #fff;
-                }
             }
         }
     }
-    
-    aside {
-        text-align: center;
-        float: right;
-        width: 20%;
-        img {
-            width: 60%;
-            height: 60%;
-        }
-        p {
-            text-align: center;
-            color: #666;
-            line-height: 25px;
-        }
-    }
-    
     .moblie-foot {
         display: none;
     }
-    
+
     @media only screen and (max-width: 769px) and (min-width: 375px) {
         .moblie-foot {
             display: none;

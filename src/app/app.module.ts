@@ -1,3 +1,4 @@
+import { JlcourseService } from './shared/jlcourse.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -18,6 +19,8 @@ import { RecommendComponent } from './recommend/recommend.component';
 import { CourslistComponent } from './courslist/courslist.component';
 import { LoginComponent } from './login/login.component';
 import { CoursepageComponent } from './coursepage/coursepage.component';
+import { ClassifyPipe } from './pipe/classify.pipe';
+import { ChangePipe } from './pipe/change.pipe';
 
 const rootRouterConfig:Routes=[
   {path:'',component:HomepageComponent},
@@ -40,7 +43,9 @@ const rootRouterConfig:Routes=[
     RecommendComponent,
     CourslistComponent,
     LoginComponent,
-    CoursepageComponent
+    CoursepageComponent,
+    ClassifyPipe,
+    ChangePipe
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,7 @@ const rootRouterConfig:Routes=[
     HttpModule,
     RouterModule.forRoot(rootRouterConfig)
   ],
-  providers: [],
+  providers: [JlcourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

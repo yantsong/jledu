@@ -1,0 +1,38 @@
+.bgc{
+    background-color: #f8f8f8;
+}
+.sort-wrap{
+  border:1px solid #eee;
+}
+.tap{
+  background: #fff;
+  height:46px;
+  line-height:46px;
+  position:relative;
+  border-bottom: 1px solid #eee;
+  li{
+    float:left;
+    margin-right:5px;
+    &.current{
+    a{
+      border-color: #d44920;
+      color: #d44920;
+      text-decoration: none;
+    }
+      }
+    a{
+      border-left: 1px solid transparent;
+     border-right: 1px solid transparent;
+      display: block;
+      padding:0 30px;
+      line-height:44px;
+      font-size:14px;
+      border-top: 2px solid transparent;
+      &:hover{
+        border-color: #d44920;
+      color: #d44920;
+      text-decoration: none;
+      }
+    }
+  }
+}

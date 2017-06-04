@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-coursenote',
@@ -6,11 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coursenote.component.scss']
 })
 export class CoursenoteComponent implements OnInit {
+  @Input()
+  courseData:Array<any>;
+ dataOne:Array<any>;
+ dataTwo:Array<any>;
 private arr:Function=Array;
   constructor() { }
 
   ngOnInit() {
-    console.log(typeof(this.arr));
+    this.dataOne = this.courseData.slice(0,4);
+    this.dataTwo = this.courseData.slice(4,8);
+    console.log(this.dataOne,this.dataTwo);
+    
   }
 
 }
