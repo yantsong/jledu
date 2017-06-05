@@ -1,11 +1,11 @@
 .courselist {
-    padding: 0;
+    padding-top: 1rem;
     background: #fff;
     .thumbnail {
         border: none;
         padding: 0;
     }
-    .listitem:hover .thumbnail {
+    &:hover .thumbnail {
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     }
     .thumbnail:hover img {
@@ -35,9 +35,6 @@
     em {
         font-style: normal;
         color: green;
-    }
-    .listitem {
-        margin-top: 1rem;
     }
     .info {
         margin: 2rem 0 0.5rem 0;

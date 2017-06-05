@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-course-syllabus',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course-syllabus.component.scss']
 })
 export class CourseSyllabusComponent implements OnInit {
-
+coursekey:boolean=true;
   constructor() { }
 
   ngOnInit() {
   }
-
+onoff(){
+  this.coursekey=!this.coursekey;
+}
 }

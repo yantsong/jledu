@@ -39,6 +39,7 @@
             }
         }
         .section {
+            transition: .3s ease-in-out;
             overflow: hidden;
             li {
                 padding: 10px 5px 10px 15px;

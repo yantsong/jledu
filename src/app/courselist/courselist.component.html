@@ -1,17 +1,15 @@
-<div class="courselist clearfix">
-    <div class="col-sm-6 col-md-3 col-xs-6 listitem" *ngFor="let item of courseData">
-        <div class=" thumbnail" [routerLink]="['/course-details',item.courseid] ">
-            <div class="imgbox ">
-                <img [src]="item.src " alt=" ">
+<div class="courselist">
+    <div class=" thumbnail" [routerLink]="['/course-details',courseData.courseid] ">
+        <div class="imgbox ">
+            <img [src]="courseData.src " alt=" ">
+        </div>
+        <div class="caption ">
+            <div class="clearfix ">
+                <h1 class="pull-left ">{{courseData.coursename}}</h1>
             </div>
-            <div class="caption ">
-                <div class="clearfix ">
-                    <h1 class="pull-left ">{{item.coursename}}</h1>
-                </div>
-                <div class="info ">
-                    <span>{{item.sell}}人购买</span><span>{{item.watch}}浏览</span>
-                    <!--<em class="pull-right ">免费</em>-->
-                </div>
+            <div class="info ">
+                <span>{{courseData.sell}}人购买</span><span>{{courseData.watch}}浏览</span>
+                <!--<em class="pull-right ">免费</em>-->
             </div>
         </div>
     </div>

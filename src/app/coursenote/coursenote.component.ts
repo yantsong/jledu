@@ -10,14 +10,10 @@ export class CoursenoteComponent implements OnInit {
   courseData:Array<any>;
  dataOne:Array<any>;
  dataTwo:Array<any>;
-private arr:Function=Array;
+ kind:string='capital';
+ key:string='live';
   constructor() { }
-
   ngOnInit() {
-    this.dataOne = this.courseData.slice(0,4);
-    this.dataTwo = this.courseData.slice(4,8);
-    console.log(this.dataOne,this.dataTwo);
-    
   }
 
 }

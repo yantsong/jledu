@@ -3,11 +3,14 @@
         <app-navtab title="网校课程" tips="更多 >"></app-navtab>
     </div>
     <ul class="clearfix">
-        <li class="pull-left active">精品课程</li>
-        <li class="pull-left" (click)="checkNewCourse()">最新课程</li>
+        <li class="pull-left" (click)="checkHotCourse()" [class.active]="onoff">精品课程</li>
+        <li class="pull-left" (click)="checkNewCourse()" [class.active]="!onoff">最新课程</li>
         <li class="pull-left">全部课程</li>
     </ul>
-    <div>
-        <app-courselist [courseData]="courseData  | classify : kind : key | slice :0 :8"></app-courselist>
+    <div class="clearfix">
+        <div class="col-sm-6 col-md-3 col-xs-6 listitem" *ngFor="let item of courseData | classify : kind : key | slice :0 :8">
+            <app-courselist [courseData]="item"></app-courselist>
+        </div>
     </div>
+
 </div>

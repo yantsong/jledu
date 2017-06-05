@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CourseDetailsComponent implements OnInit {
   id:number;
   courseData:any;
-  recommedData:Array<any>=[];
+  recommedData:any;
   constructor(private route: ActivatedRoute,private course: JlcourseService) { 
   this.route.params.subscribe(
     params => {
@@ -20,7 +20,7 @@ export class CourseDetailsComponent implements OnInit {
   }
   ngOnInit() {
     this.courseData = this.course.getCourseById(this.id);
-    this.recommedData.push(this.course.getCourseById(7));
+    this.recommedData = this.course.getCourseById(7);
     console.log(this.recommedData);
   }
 

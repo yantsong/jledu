@@ -7,16 +7,21 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OnlinecourseComponent implements OnInit {
  private key:string = 'hot';
- private kind:string = 'coursestatus'
+ private kind:string = 'coursestatus';
+ private onoff:boolean = true;
   @Input()
   courseData:Array<any>;
   constructor() { }
   ngOnInit() {
   }
   checkNewCourse(){
-    console.log(111);
-    
+    this.onoff = !this.onoff;
     this.key = "fresh";
   }
+   checkHotCourse(){
+    this.onoff = !this.onoff;
+    this.key = "hot";
+  }
+
 
 }

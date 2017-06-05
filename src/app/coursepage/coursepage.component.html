@@ -10,7 +10,13 @@
                     <li><a href="javascript:;">价格</a></li>
                 </ol>
             </section>
-            <app-courselist [courseData]="courseData | slice :0 :12"></app-courselist>
+            <div class="courselist clearfix">
+                <div class="col-sm-6 col-md-3 col-xs-6 listitem" *ngFor="let item of courseData">
+                    <app-courselist [courseData]="item"></app-courselist>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>

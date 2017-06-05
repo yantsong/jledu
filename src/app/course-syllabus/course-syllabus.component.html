@@ -4,11 +4,11 @@
 <div class="content">
     <ul>
         <li class="list">
-            <a href="#" title="第一章" class=" headline">
+            <a title="第一章" class="headline" (click)='onoff()'>
                 <p class="">第一章</p>
                 <span class="icon16"></span>
             </a>
-            <ol class="section">
+            <ol class="section" [style.max-height]="coursekey?'165px':'0px'">
                 <li>
                     <span class="icon16"></span>
                     <p>第一节</p>
