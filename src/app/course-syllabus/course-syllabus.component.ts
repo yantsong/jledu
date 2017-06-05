@@ -1,3 +1,4 @@
+import { JlcourseService } from 'app/shared/jlcourse.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CourseSyllabusComponent implements OnInit {
 coursekey:boolean=true;
-  constructor() { }
-
+private courseData:object;
+  constructor( private course:JlcourseService) {
+this.courseData = this.course.getDetail();
+   }
   ngOnInit() {
+  console.log(this.courseData);
   }
 onoff(){
   this.coursekey=!this.coursekey;

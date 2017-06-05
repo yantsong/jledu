@@ -25,7 +25,7 @@
                 <div class="lecturer">
                     <p>主讲人：</p>
                     <ul>
-                        <li>{{courseData.courseteacherinfo.teachername}}</li>
+                        <li *ngFor="let item of courseData.courseteacherinfo">{{item.teachername}}</li>
                     </ul>
                 </div>
                 <div class="share-box">
@@ -85,13 +85,13 @@
                 </div>
                 <div class="list">
                     <ul>
-                        <li class="clearfix">
+                        <li class="clearfix" *ngFor="let item of courseData.courseteacherinfo">
                             <div class="avatar fl ">
-                                <img [src]="courseData.courseteacherinfo.teachersrc" alt="">
+                                <img [src]="item.teachersrc" alt="">
                             </div>
                             <div class="content fl">
-                                <p class="name">{{courseData.courseteacherinfo.teachername}}</p>
-                                <p class="introduction">{{courseData.courseteacherinfo.teachersummary}}</p>
+                                <p class="name">{{item.teachername}}</p>
+                                <p class="introduction">{{item.teachersummary}}</p>
                             </div>
                         </li>
                     </ul>

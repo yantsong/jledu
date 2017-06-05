@@ -3,54 +3,18 @@
 </div>
 <div class="content">
     <ul>
-        <li class="list">
+        <li class="list" *ngFor="let item of courseData.coursecatalogue">
             <a title="第一章" class="headline" (click)='onoff()'>
-                <p class="">第一章</p>
+                <p class="">{{item.title}}</p>
                 <span class="icon16"></span>
             </a>
             <ol class="section" [style.max-height]="coursekey?'165px':'0px'">
-                <li>
+                <li *ngFor="let items of item.content">
                     <span class="icon16"></span>
-                    <p>第一节</p>
+                    <p>{{items}}</p>
                     <a href="#">学习开始</a>
                 </li>
-                <li>
-                    <span class="icon16"></span>
-                    <p>第一节</p>
-                    <a href="#">学习开始</a>
-                </li>
-                <li>
-                    <span class="icon16"></span>
-                    <p>第一节</p>
-                    <a href="#">学习开始</a>
-                </li>
-
             </ol>
         </li>
-        <li class="list">
-            <a href="#" title="第一章" class=" headline">
-                <p class="">第一章</p>
-                <span class="icon16"></span>
-            </a>
-            <ol class="section">
-                <li>
-                    <span class="icon16"></span>
-                    <p>第一节</p>
-                    <a href="#">学习开始</a>
-                </li>
-                <li>
-                    <span class="icon16"></span>
-                    <p>第一节</p>
-                    <a href="#">学习开始</a>
-                </li>
-                <li>
-                    <span class="icon16"></span>
-                    <p>第一节</p>
-                    <a href="#">学习开始</a>
-                </li>
-
-            </ol>
-        </li>
-
     </ul>
 </div>

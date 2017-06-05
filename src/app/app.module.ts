@@ -1,3 +1,4 @@
+import { CourseinfoService } from './shared/courseinfo.service';
 
 import { JlcourseService } from './shared/jlcourse.service';
 
@@ -84,7 +85,7 @@ const rootRouterConfig:Routes=[
     HttpModule,
     RouterModule.forRoot(rootRouterConfig,{useHash:true})
   ],
-  providers: [JlcourseService],
+  providers: [JlcourseService,CourseinfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
