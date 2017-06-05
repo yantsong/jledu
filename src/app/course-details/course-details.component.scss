@@ -5,6 +5,8 @@
     vertical-align: middle;
 }
 
+a {}
+
 .route {
     width: 100%;
     padding-top: 15px;
@@ -218,6 +220,52 @@
                 border-left: 4px solid #CF3F3F;
                 font-size: 16px;
                 padding-left: 10px;
+            }
+        }
+        .lecturer {
+            .list {
+                ul {
+                    padding-bottom: 20px;
+                }
+                li {
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #f0f0f0;
+                }
+                .avatar {
+                    padding-top: 10px;
+                    margin: 0 10px;
+                    display: inline-block;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        vertical-align: top;
+                    }
+                }
+                .content {
+                    display: inline-block;
+                    padding-top: 10px;
+                    .name {
+                        font-size: 16px;
+                        color: #333;
+                        margin-bottom: 10px;
+                    }
+                    .introduction {
+                        color: #999;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .recommend {
+            .list {
+                ul {
+                    padding-bottom: 20px;
+                }
+                li {
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #f0f0f0;
+                }
             }
         }
     }
