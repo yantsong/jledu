@@ -19,9 +19,9 @@ export class CourseDetailsComponent implements OnInit {
   )
   }
   ngOnInit() {
-    this.courseData = this.course.getCourseById(this.id);
+    this.courseData = this.course.getDetail();
     this.recommedData = this.course.getCourseById(7);
-    console.log(this.recommedData);
+    console.log(this.courseData);
   }
 
 }

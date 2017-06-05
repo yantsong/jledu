@@ -18,14 +18,14 @@
             <div class="up-right">
                 <h2>{{courseData.coursename}}</h2>
                 <ul class="people">
-                    <li class="study">学习人数&nbsp;&nbsp;<em>{{courseData.sell}}</em></li>
-                    <li class="hours">课时数&nbsp;&nbsp;<em>65</em></li>
-                    <li class="browse-count">浏览数&nbsp;&nbsp;<em>{{courseData.watch}}</em></li>
+                    <li class="study">学习人数&nbsp;&nbsp;<em>{{courseData.coursestudents}}</em></li>
+                    <li class="hours">课时数&nbsp;&nbsp;<em>{{courseData.courseamount}}</em></li>
+                    <li class="browse-count">浏览数&nbsp;&nbsp;<em>{{courseData.courseview}}</em></li>
                 </ul>
                 <div class="lecturer">
                     <p>主讲人：</p>
                     <ul>
-                        <li>{{courseData.teachInfo.teacherName}}</li>
+                        <li>{{courseData.courseteacherinfo.teachername}}</li>
                     </ul>
                 </div>
                 <div class="share-box">
@@ -87,11 +87,11 @@
                     <ul>
                         <li class="clearfix">
                             <div class="avatar fl ">
-                                <img [src]="courseData.teachInfo.teacherSrc" alt="">
+                                <img [src]="courseData.courseteacherinfo.teachersrc" alt="">
                             </div>
                             <div class="content fl">
-                                <p class="name">{{courseData.teachInfo.teacherName}}</p>
-                                <p class="introduction">{{courseData.teachInfo.teacherSummary}}</p>
+                                <p class="name">{{courseData.courseteacherinfo.teachername}}</p>
+                                <p class="introduction">{{courseData.courseteacherinfo.teachersummary}}</p>
                             </div>
                         </li>
                     </ul>
