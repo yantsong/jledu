@@ -5,10 +5,6 @@ h1 {
     padding: 0;
 }
 
-.col-xs-6 {
-    padding: 10px;
-}
-
 .thumbnail .caption {
     padding: 5px;
 }
@@ -22,20 +18,14 @@ $max-screen: 1200px;
     font-family: "Helvetica Neue", \5FAE\8F6F\96C5\9ED1, "SimHei", Tohoma;
 }
 
+article {
+    font-size: $min-font-size
+}
+
 @media(max-width:500px) {
      :root {
         font-size: 8px;
     }
-    .col-xs-6 {
-        padding: 0;
-    }
-    .thumbnail {
-        padding: 0;
-    }
-}
-
-article {
-    font-size: $min-font-size
 }
 
 @media(min-width:$min-screen) and (max-width: $max-screen) {

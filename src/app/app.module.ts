@@ -32,11 +32,25 @@ import { CourseSyllabusComponent } from './course-syllabus/course-syllabus.compo
 import { CourseCommentComponent } from './course-comment/course-comment.component';
 
 const rootRouterConfig:Routes=[
-  {path:'',component:HomepageComponent},
+  {path:'',redirectTo:'homepage', pathMatch:'full'},
   {path:'homepage',component:HomepageComponent},
   {path:'coursepage',component:CoursepageComponent},
-  // {path:'course-details',component:CourseDetailsComponent},
-  {path:'course-details/:id',component: CourseDetailsComponent},
+  {path:'course-details/:id',component: CourseDetailsComponent,
+    children:[
+      {
+        path:'course-synopsis',component:CourseSynopsisComponent
+      },
+      {
+        path:'course-syllabus',component:CourseSyllabusComponent
+      },
+      {
+        path:'course-comment',component:CourseCommentComponent
+      },
+       {
+        path:'**',component:CourseSynopsisComponent
+      },
+    ]
+  },
   {path:'**',component:HomepageComponent}
 ];
 
@@ -68,7 +82,7 @@ const rootRouterConfig:Routes=[
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(rootRouterConfig)
+    RouterModule.forRoot(rootRouterConfig,{useHash:true})
   ],
   providers: [JlcourseService],
   bootstrap: [AppComponent]

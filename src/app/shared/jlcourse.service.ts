@@ -8,10 +8,12 @@ export class JlcourseService {
   let state:string;
   let capital:string;
   let domain:string;
+  let teachInfo:Object;
   state = Math.random()*10>7?"new":Math.random()*10>5?"hot":'fresh';
   capital = Math.random()*10>7?"support":Math.random()*10>5?"online":'live';
   domain = Math.random()*10>7?"it":Math.random()*10>5?"teacher":'School';
-  this.morkCourse.push(new Course("技术开发套餐","http://wx.jledu.com.cn/images/upload/course/20161222/1482393428320.jpg",Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100),state,domain,capital,index))
+  teachInfo = {teacherName:'张三',teachTime:"13:00-15:00",teachDate:"02-12",teacherSrc:'http://wx.jledu.com.cn/images/upload/teacher/20150915/1442297969808.jpg',teacherSummary:"毕业于清华大学"}
+  this.morkCourse.push(new Course("技术开发套餐","http://wx.jledu.com.cn/images/upload/course/20161222/1482393428320.jpg",Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100),state,domain,capital,index,teachInfo))
 }
     console.log(this.morkCourse);
    }
@@ -33,7 +35,8 @@ export class Course {
               public coursestatus:string,
               public domian:string,
               public capital:string,
-              public courseid:number
+              public courseid:number,
+              public teachInfo:Object,
             ){
   }
 }

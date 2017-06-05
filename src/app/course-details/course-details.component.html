@@ -16,17 +16,16 @@
         </div>
         <div class="col-md-6">
             <div class="up-right">
-                <h2>技术开套餐</h2>
+                <h2>{{courseData.coursename}}</h2>
                 <ul class="people">
-                    <li class="study">学习人数&nbsp;&nbsp;<em>865</em></li>
+                    <li class="study">学习人数&nbsp;&nbsp;<em>{{courseData.sell}}</em></li>
                     <li class="hours">课时数&nbsp;&nbsp;<em>65</em></li>
-                    <li class="browse-count">浏览数&nbsp;&nbsp;<em>5485</em></li>
+                    <li class="browse-count">浏览数&nbsp;&nbsp;<em>{{courseData.watch}}</em></li>
                 </ul>
                 <div class="lecturer">
                     <p>主讲人：</p>
                     <ul>
-                        <li>李立</li>
-                        <li>王健华</li>
+                        <li>{{courseData.teachInfo.teacherName}}</li>
                     </ul>
                 </div>
                 <div class="share-box">
@@ -68,14 +67,15 @@
     <div class="course-content clearfix">
         <div class="down-left fl">
             <ul class="list">
-                <li>课程详情</li>
-                <li>课程目录</li>
-                <li>课程评论</li>
+                <li [routerLink]="['course-synopsis']" routerLinkActive='active'>课程详情</li>
+                <li [routerLink]="['course-syllabus']" routerLinkActive='active'>课程目录</li>
+                <li [routerLink]="['course-comment']" routerLinkActive='active'>课程评论</li>
             </ul>
             <div class="down-content">
                 <!--<app-course-synopsis></app-course-synopsis>-->
                 <!--<app-course-syllabus></app-course-syllabus>-->
-                <app-course-comment></app-course-comment>
+                <!--<app-course-comment></app-course-comment>-->
+                <router-outlet></router-outlet>
             </div>
         </div>
         <div class="down-right fr">
@@ -87,29 +87,11 @@
                     <ul>
                         <li class="clearfix">
                             <div class="avatar fl ">
-                                <img src="../../assets/images/course-derails/avatar-boy.gif" alt="">
+                                <img [src]="courseData.teachInfo.teacherSrc" alt="">
                             </div>
                             <div class="content fl">
-                                <p class="name">张三</p>
-                                <p class="introduction">毕业于人大附中</p>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="avatar fl ">
-                                <img src="../../assets/images/course-derails/avatar-boy.gif" alt="">
-                            </div>
-                            <div class="content fl">
-                                <p class="name">张三</p>
-                                <p class="introduction">毕业于人大附中</p>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="avatar fl ">
-                                <img src="../../assets/images/course-derails/avatar-boy.gif" alt="">
-                            </div>
-                            <div class="content fl">
-                                <p class="name">张三</p>
-                                <p class="introduction">毕业于人大附中</p>
+                                <p class="name">{{courseData.teachInfo.teacherName}}</p>
+                                <p class="introduction">{{courseData.teachInfo.teacherSummary}}</p>
                             </div>
                         </li>
                     </ul>
