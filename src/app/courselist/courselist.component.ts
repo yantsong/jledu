@@ -9,8 +9,6 @@ export class CourselistComponent implements OnInit {
 @Input()
 courseData:Array<any>;
 private currentData:Array<any>;
-@Input()
-index:number;
   constructor() { }
   ngOnInit() {
   }

@@ -9,7 +9,7 @@
     <div class="course-play clearfix">
         <div class="col-md-6">
             <div class="up-left">
-                <a href="#">
+                <a>
                     <img src="../../assets/images/course-derails/1482393428320.jpg" alt="">
                 </a>
             </div>
@@ -38,22 +38,22 @@
                         <p>分享</p>
                         <ul class="">
                             <li>
-                                <a href="#" title="分享到新浪微博" class="weibo"></a>
+                                <a title="分享到新浪微博" class="weibo"></a>
                             </li>
                             <li>
-                                <a href="#" title="分享到微信" class="weixin"></a>
+                                <a title="分享到微信" class="weixin"></a>
                             </li>
                             <li>
-                                <a href="#" title="分享到QQ空间" class="qzone"></a>
+                                <a title="分享到QQ空间" class="qzone"></a>
                             </li>
                             <li>
-                                <a href="#" title="分享到豆瓣网" class="douban"></a>
+                                <a title="分享到豆瓣网" class="douban"></a>
                             </li>
                             <li>
-                                <a href="#" title="分享到人人网" class="renren"></a>
+                                <a title="分享到人人网" class="renren"></a>
                             </li>
                             <li>
-                                <a href="#" title="分享到腾讯微博" class="tqq"></a>
+                                <a title="分享到腾讯微博" class="tqq"></a>
                             </li>
                         </ul>
                     </div>
@@ -103,7 +103,9 @@
                 </div>
                 <div class="list">
                     <ul>
-                        <li></li>
+                        <li>
+                            <app-courselist [courseData]="recommedData"></app-courselist>
+                        </li>
                     </ul>
                 </div>
             </div>
