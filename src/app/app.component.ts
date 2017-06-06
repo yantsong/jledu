@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
+  courseData:object;
   constructor(private course:CourseinfoService){
   }
   title = 'app works!';
   ngOnInit(){
-this.course.getDetail();
+this.courseData=this.course.getCourse();
   }
 }

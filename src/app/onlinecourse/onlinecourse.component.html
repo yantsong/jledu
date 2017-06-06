@@ -8,7 +8,7 @@
         <li class="pull-left">全部课程</li>
     </ul>
     <div class="clearfix">
-        <div class="col-sm-6 col-md-3 col-xs-6 listitem" *ngFor="let item of courseData | classify : kind : key | slice :0 :8">
+        <div class="col-sm-6 col-md-3 col-xs-6 listitem" *ngFor="let item of currentData">
             <app-courselist [courseData]="item"></app-courselist>
         </div>
     </div>

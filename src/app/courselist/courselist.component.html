@@ -1,14 +1,14 @@
 <div class="courselist">
     <div class=" thumbnail" [routerLink]="['/course-details',courseData.courseid] ">
         <div class="imgbox ">
-            <img [src]="courseData.src " alt=" ">
+            <img [src]="courseData.logo" alt=" ">
         </div>
         <div class="caption ">
             <div class="clearfix ">
-                <h1 class="pull-left ">{{courseData.coursename}}</h1>
+                <h1 class="pull-left ">{{courseData.courseName}}</h1>
             </div>
             <div class="info ">
-                <span>{{courseData.sell}}人购买</span><span>{{courseData.watch}}浏览</span>
+                <span>{{courseData.pageBuycount}}人购买</span><span>{{courseData.pageViewcount}}浏览</span>
                 <!--<em class="pull-right ">免费</em>-->
             </div>
         </div>

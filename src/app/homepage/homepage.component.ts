@@ -1,3 +1,5 @@
+import { CourseinfoService } from './../shared/courseinfo.service';
+import { Http } from '@angular/http';
 import { AppComponent } from './../app.component';
 import { JlcourseService, Course } from './../shared/jlcourse.service';
 import { Component, OnInit, Input } from '@angular/core';
@@ -8,14 +10,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
- private courseData:Array<Course>;
+ private courseData:Object;
 
-  constructor(private jlcourse: JlcourseService,public parent:AppComponent) {
-    console.log(this.parent.title);
+  constructor(public parent:AppComponent) {
    }
-
   ngOnInit() {
-    this.courseData = this.jlcourse.getAllCourse();
+    this.courseData = this.parent.courseData;
     console.log(this.courseData);
   }
 

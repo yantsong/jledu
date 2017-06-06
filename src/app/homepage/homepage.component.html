@@ -3,14 +3,14 @@
         <app-carousel></app-carousel>
     </div>
     <div class="container">
-        <app-coursenote [courseData]="courseData"></app-coursenote>
+        <app-coursenote [courseData]="courseData.courseDtos"></app-coursenote>
     </div>
     <div style="background-color:#f8f8f8">
         <div class="container">
-            <app-onlinecourse [courseData]="courseData"></app-onlinecourse>
+            <app-onlinecourse [courseData]="courseData.mapCourseList.recommen_32" [newData]="courseData.newCourseList"></app-onlinecourse>
         </div>
     </div>
     <div class="container">
-        <app-recommend [courseData]="courseData"></app-recommend>
+        <app-recommend [courseData]="courseData.mapCourseList"></app-recommend>
     </div>
 </div>

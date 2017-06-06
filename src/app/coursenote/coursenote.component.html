@@ -4,50 +4,49 @@
 <div class="carousel slide coursenote" data-ride="carousel" data-interval="10000" id="carouselnote">
     <div class="carousel-inner">
         <div class="item  active">
-            <div class="col-sm-6 col-md-3 col-xs-6" *ngFor="let item of courseData|classify :kind:key|slice:0:4">
+            <div class="col-sm-6 col-md-3 col-xs-6" *ngFor="let item of courseData">
                 <div class="thumbnail">
                     <div class="imgbox">
-                        <img [src]="item.src" alt="">
+                        <img [src]="item.logo" alt="">
                     </div>
                     <div class="caption">
                         <div class="clearfix">
-                            <h1>{{item.coursename}}</h1>
+                            <h1>{{item.courseName}}</h1>
                             <span>正在直播</span>
                         </div>
-                        <p>学员:{{item.watch}}人</p>
+                        <p>学员:{{item.pageBuycount}}人</p>
                     </div>
                     <div class="linepoint">
                         <span></span>
                     </div>
-                    <div class="time">{{itemteachtime}}</div>
+                    <div class="time">{{liveBeginTime}}</div>
                     <div class="teacher clearfix">
-                        <span class="pull-left">主讲:{{item.teacherName}}</span>
-                        <em class="pull-right">{{item.teachdate}}</em>
+                        <span class="pull-left">主讲:{{item.teachername}}</span>
+                        <em class="pull-right">{{item.liveEndTime}}</em>
                     </div>
                 </div>
             </div>
         </div>
         <div class="item">
-            <div class="col-sm-6 col-md-3 col-xs-6" *ngFor="let item of courseData|classify :kind:key|slice:4:8">
+            <div class="col-sm-6 col-md-3 col-xs-6" *ngFor="let item of courseData">
                 <div class="thumbnail">
                     <div class="imgbox">
-                        <img [src]="item.src" alt="">
+                        <img [src]="item.logo" alt="">
                     </div>
                     <div class="caption">
-                        <div>
-                            <h1>{{item.coursename}}</h1>
+                        <div class="clearfix">
+                            <h1>{{item.courseName}}</h1>
                             <span>正在直播</span>
-
                         </div>
-                        <p>学员:{{item.watch}}人</p>
+                        <p>学员:{{item.pageBuycount}}人</p>
                     </div>
                     <div class="linepoint">
                         <span></span>
                     </div>
-                    <div class="time">12-21 13：00 --- 12-21 15：00</div>
+                    <div class="time">{{liveBeginTime}}</div>
                     <div class="teacher clearfix">
-                        <span class="pull-left">主讲:李老师</span>
-                        <em class="pull-right">02-12-12-28</em>
+                        <span class="pull-left">主讲:{{item.teachername}}</span>
+                        <em class="pull-right">{{item.liveEndTime}}</em>
                     </div>
                 </div>
             </div>
@@ -55,4 +54,5 @@
     </div>
     <a href="#carouselnote" class="carright" data-slide="next"></a>
     <a href="#carouselnote" class="carleft" data-slide="prev"></a>
+    <!--<p>${newCourseList }</p>-->
 </div>

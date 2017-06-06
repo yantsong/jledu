@@ -2,7 +2,7 @@
     <app-navtab title="为你推荐" tips="换一换"></app-navtab>
 </div>
 <div class="clearfix">
-    <div class="col-sm-6 col-md-3 col-xs-6 listitem" *ngFor="let item of courseData | classify : kind : key | slice :index :(index+1)*4">
+    <div class="col-sm-6 col-md-3 col-xs-6 listitem" *ngFor="let item of courseData.recommen_2 | slice :index :(index+1)*4">
         <app-courselist [courseData]="item"></app-courselist>
     </div>
 </div>

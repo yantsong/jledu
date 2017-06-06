@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RecommendComponent implements OnInit {
 @Input()
-courseData:Array<any>;
+courseData:Object;
 private kind:string = "capital"
 private key:string = "support"
 private index:number = 0;
